@@ -1,0 +1,25 @@
+<table width="50%" border="1" id="game" click="Delegation($event)"></table>
+<label>
+    Please, input a width.
+    <input type="text" [formControl]="x" />
+</label>
+<br />
+<label>
+    Please, input a height.
+    <input type="text" [formControl]="y" />
+</label> 
+<br />
+<button (click)="DrawGrid()">Draw game board</button>
+
+<p id="text">Someting</p>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+ 
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <button (click)="ChangeColorRed()">Red</button>
+        <button (click)="ChangeColorGreen()">Green</button>
+      </div>
+    </div>
+  </div>
